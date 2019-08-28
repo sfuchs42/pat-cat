@@ -33,7 +33,6 @@
 .links {
   font-family: 'quicksandregular', sans-serif;
   padding-top: 26px;
-  word-spacing: 10px;
 }
 
 .links a {
@@ -84,4 +83,28 @@ h2 {
 .img-fluid {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
+}
+
+@media (max-width: 750px) {
+  .footer-blurb {
+    text-align: left;
+  }
+}
+
+.modal {
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h2 span {
+  color: #dddddd;
+  font-family: 'quicksandregular', sans-serif;
+}
+
+::selection {
+  background-color: #f84342;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration-color: #f84342;
 }
