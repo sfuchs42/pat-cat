@@ -27,9 +27,8 @@
         Everyone loves a good movie
       </div>
       <div class="col-10 offset-sm-0 col-sm-5 links">
-        <!--<%= link_to 'Contribute', new_quote_path %> -->
         <!-- Button trigger modal -->
-        <%= link_to 'Contribute', '#', data: {toggle: 'modal', target:'#myModal'} %>
+        <%= link_to 'Add A Quote', '#', data: {toggle: 'modal', target:'#myModal'} %>
         &nbsp;&nbsp;
         <%= link_to 'About', about_path %>
       </div>
@@ -40,13 +39,14 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h4 class="modal-title" id="myModalLabel">Contribute Your Quote</h4>
+            <h4 class="modal-title" id="myModalLabel">Add Your Quote</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
             </div>
               <%= simple_form_for Quote.new do |f| %>
                 <div class="modal-body">
+                  <h5>Have a favorite quote that you don't see? Add it here!</h5>
                   <%= f.input :saying, label: 'New quote', placeholder: "Well, that\'s just, like, your opinion man." %>
                   <br />
                   <%= f.input :author, label: 'Name of the movie', placeholder: "The Big Lebowski" %>
@@ -54,7 +54,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <%= f.submit 'Create', class: 'btn btn-danger' %>
+              <%= f.submit 'Add', class: 'btn btn-danger' %>
             </div>
           <% end %>
         </div>
