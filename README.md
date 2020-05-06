@@ -1,24 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a pretty basic quote machine. The quotes are from AFI's top 100 movie quotes, and it was meant to be a quick practice of database calls for display on the frontend. It also allows for user addition to the database.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+It's a basic Ruby On Rails application with bootstrap and simple form for formating and adding new quotes.
